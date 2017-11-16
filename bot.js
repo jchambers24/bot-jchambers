@@ -6,7 +6,7 @@ client.on('ready', () => {
     console.log('Bot Online');
 });
 
-client.guildMemberAdd
+client.user.setGame('Botting')
 
 client.on('message', message => {
     if (message.content === '!ping') {
