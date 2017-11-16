@@ -11,6 +11,11 @@ client.on('message', message => {
     if (message.content === '!ping') {
     	message.channel.send('pong');
   	}
+    
+    if (message.content === '!status') {
+        message.channel.send(client.status);
+    }
+    
 });
 
 // THIS  MUST  BE  THIS  WAY
