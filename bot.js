@@ -13,8 +13,8 @@ client.on('message', message => {
     	message.channel.send('pong');
   	}
     
-    if (message.content === '!uptime') {
-        message.channel.send(client.uptime);
+    if (message.content === '!botname') {
+        message.channel.send(client.user.username);
     }
     
 });
