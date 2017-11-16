@@ -1,2 +1,3 @@
 # bot-jchambers
-Discord Bot Woo Hoo
+
+Discrod Bot Run Using Heruko!
