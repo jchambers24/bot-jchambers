@@ -6,14 +6,15 @@ client.on('ready', () => {
     console.log('Bot Online');
 });
 
+client.guildMemberAdd
 
 client.on('message', message => {
     if (message.content === '!ping') {
     	message.channel.send('pong');
   	}
     
-    if (message.content === '!status') {
-        message.channel.send(client.status);
+    if (message.content === '!uptime') {
+        message.channel.send(client.uptime);
     }
     
 });
