@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.user.setGame('Eating Shit!')
 
 client.on('ready', () => {
     console.log('Bot Online');
