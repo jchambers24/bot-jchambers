@@ -7,7 +7,6 @@ client.on('ready', () => {
    
 });
 
-client.user.setGame('Botting');
 
 client.on('message', message => {
     if (message.content === '!ping') {
