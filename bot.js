@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Bot Online');
-   
+    client.user.setGame('with my balls');
 });
 
 
