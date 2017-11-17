@@ -6,9 +6,15 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => { // simple command
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content == '!fag') {
+    msg.reply(', quit being a faggot');
   }
+  else
+    
+   if (msg.content.startsWith("!kick")) {
+     let member = msg.mentions.members.first();
+     member.kick()
+   }
 });
 
 // THIS  MUST  BE  THIS  WAY
