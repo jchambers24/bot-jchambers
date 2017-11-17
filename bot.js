@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+const prefix = "!"
 
 client.on('ready', () => {
     console.log('Bot Online');
@@ -9,14 +9,17 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-    if (message.content === '!ping') {
-    	message.channel.send('pong');
-  	}
-    
-    if (message.content === '!botname') {
-        message.channel.send(client.user.username);
-    }
-    
+       if(message.content.startsWith(prefix+command)) {
+            
+           if(command === 'ping') {
+            message.channel.send('Pong!');
+        }else 
+            
+           if (command === "kick") {
+            let member = message.mentions.members.first();
+            member.kick();
+                } }
+           
 });
 
 // THIS  MUST  BE  THIS  WAY
