@@ -1,16 +1,14 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on('ready', () => { 
-    client.log("Ready!")
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`); // console login message
 });
 
-
-client.on('message', message => {
-  if (message.content === 'ping') {
-    message.reply('pong');
+client.on('message', msg => { // simple command
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
   }
-           
 });
 
 // THIS  MUST  BE  THIS  WAY
