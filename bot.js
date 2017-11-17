@@ -7,9 +7,9 @@ client.on('ready', () => {
 });
 
 
-client.on('message', message => {
-       if (message == "!ping") {
-           message.channel.send("pong");
+client.on('message', msg => {
+       if (msg.content == "!ping") {
+           msg.channel.send("pong");
        };    
            
 });
