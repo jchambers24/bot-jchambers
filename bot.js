@@ -13,7 +13,7 @@ client.on('message', msg => { // simple command
     
    if (msg.content.startsWith("!kick")) {
      let member = msg.mentions.members.first();
-     member.kick("You Have Been Kicked By THe Bot ")
+     member.kick();
    }
 });
 
