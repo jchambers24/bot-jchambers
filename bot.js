@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => { // simple command
-  if (msg.content == '!fag') {
-    msg.reply(', quit being a faggot');
+  if (msg.content == '!ping') {
+    msg.reply(' pong');
   }
   else
     
