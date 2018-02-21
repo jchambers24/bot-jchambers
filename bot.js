@@ -7,14 +7,16 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => { // simple command
-  if(message.content.startsWith(prefix+command)){
+const args = message.content.slice(prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+  if(message.content.startsWith(prefix+'command')){
     if(command === 'ping') {
   message.channel.send('Pong!');
   } else
   if (command === 'blah') {
   message.channel.send('Meh.');
 }
-   }
+}
 });
 
 // THIS  MUST  BE  THIS  WAY
