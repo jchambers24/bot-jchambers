@@ -4,6 +4,7 @@ const prefix = "!"
 const version = "1.0a"
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`); // console login message
+  message.channel.send("Bot Online")
 });
 
 client.on('message', msg => { // simple command
