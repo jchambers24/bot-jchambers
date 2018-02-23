@@ -17,13 +17,7 @@ client.on('message', message => {
  
    if (command == 'ping') { // Test Command
     message.channel.reply('Pong!');
-  
-   if (command == 'kick') { // Kick A Player
-   player = message.mentions.members.first(); 
-        player.kick().then((member) => { //Succes
-            message.channel.send(":wave: " + player.displayName + " has been kicked");
-        }).catch(() => { // Failed or Bad Perms
-            message.channel.send("Access Denied :wink: Nice Try" + message.author.displayName);
+ 
   }
 }
 
