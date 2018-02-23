@@ -4,20 +4,22 @@ const prefix = "!"
 const version = "1.0a"
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`); // console login message
-  message.channel.send("Bot Online")
 });
 
 client.on('message', msg => { // simple command
-const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  message.channel.send("RocketBot Online"+)
+
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
-  if(message.content.startsWith(prefix+'command')){
-    if(command === 'ping') {
+ 
+  
+  if(command == 'ping') {
   message.channel.send('Pong!');
   } else
-  if (command === 'blah') {
+  if (command == 'blah') {
   message.channel.send('Meh.');
 }
-}
+
 });
 
 // THIS  MUST  BE  THIS  WAY
