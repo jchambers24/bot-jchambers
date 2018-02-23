@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "!"
-const version = "1.0a"
+const prefix = "+"
+const version = "1.0"
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`); // console login message
 });
