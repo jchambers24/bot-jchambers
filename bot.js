@@ -11,11 +11,11 @@ client.on('message', message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
  
-  if(command == 'ping') {
-  message.channel.send('Pong!');
+  if(command == 'announcement') {
+    message.channel.send("@everyone"+args)
   } else
-  if (command == 'blah') {
-  message.channel.send('Meh.');
+  if (command == 'ping') {
+  message.channel.reply('Pong!');
 }
 
 });
